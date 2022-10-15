@@ -1,0 +1,10 @@
+@page "/comida/{id:int}"
+@using ParamsComponent.Components
+
+<h1>Pagina de comida</h1>
+<ComidaComponent Cantidad=@Id />
+
+@code {
+    [Parameter]
+    public int Id { get; set;}
+}
